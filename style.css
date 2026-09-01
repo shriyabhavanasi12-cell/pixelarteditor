@@ -1,0 +1,27 @@
+#artboard{
+
+    display:table;
+    border-spacing:1px;
+    background-color: rgb(227, 82, 111);
+    border:5px solid rgb(227, 82, 111);
+    
+
+}
+.row{
+    display:table-row;
+
+}
+.pixel{
+    display:table-cell;
+    background-color:white;
+    width:60px;
+    height: 60px;
+    border:1px solid black;
+
+}
+.pen{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    border:2px solid black;
+}
