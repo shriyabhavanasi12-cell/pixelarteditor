@@ -14,3 +14,4 @@ pixel.addEventListener("click",()=>setPixelColour(pixel));
 
 });
 
+
