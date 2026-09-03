@@ -4,7 +4,12 @@ let penColour="black";
 
 
 function setPixelColour(pixel){
-    pixel.style.backgroundColor=penColour;
+    if (penColour==="eraser"){
+        pixel.style.backgroundColor="";
+
+    } else{
+        pixel.style.backgroundColor=penColour;  
+    }
 
 }
 document.addEventListener("DOMContentLoaded", ()=>{
@@ -21,7 +26,7 @@ const pens=document.querySelectorAll(".pen");
 pens.forEach((pen)=>{
     pen.addEventListener("click",()=>{
       penColour=pen.dataset.colour;
-      
+
     })
 })
 
